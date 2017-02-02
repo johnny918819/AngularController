@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app="AngularController"> <!--No need to call a namespace when referencing an angular item from html-->
+<!--ng-app is the "directive" -->
+<head>
+    <title>Angular Controller</title> 
+</head>
+<body ng-controller="HomeController as controller"> <!--This tells the browser that our controller is HomeController-->
+
+    <h1>{{controller.message}}</h1> <!-- {{}} Double curly brackets are used to access an angular module.-->
+    <script src="~/bower_components/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+</body>
+</html>
